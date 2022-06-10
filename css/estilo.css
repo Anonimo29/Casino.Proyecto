@@ -1,0 +1,224 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open sans';
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+    color: #aa1e14;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Header */
+
+header {
+    width: 1400px;
+    height: 600px;
+    background: #333333;
+    /* fallback for old browsers */
+    background: #8E0E00;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(36, 13%, 8%, 0.884), hsla(6, 100%, 28%, 0.733)), url(../img/casinos.fondos2.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(36, 13%, 8%, 0.884), hsla(6, 100%, 28%, 0.733)), url(../img/casinos.fondos2.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav {
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav>a {
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav>a:hover {
+    text-decoration: underline;
+}
+
+header .textos-header {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1 {
+    font-size: 50px;
+    color: white;
+}
+
+.textos-header h2 {
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+}
+
+/* About us */
+.contenedor-sobre-nosotros {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about-us {
+    display: block;
+    margin-left: 20%;
+    max-width: 30%;
+    max-height: 30%;
+    
+}
+
+.sobre-nosotros .contenido-textos {
+    width: 28%;
+    text-align: left;
+    padding-top: 110px;
+    margin-right: 18% ;
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+    background: #aa1e14;
+    color:white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px rgba(0,0, 0 , .5);
+    padding: 3px;
+    margin-right: 5px;
+}
+
+.contenido-textos p{
+    padding: 0px opx 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* Galeria */
+
+.portafolio{
+    background: #f2f2f2;
+}
+
+.galeria-port{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    display: inline-block;
+}
+
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    height: 180px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    left: 50%;
+    overflow: hidden;
+    transform: scale(0);
+    background: hsla(6, 100%, 28%, 0.651);
+    transition: transform 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 0%;
+}
+
+.hover-galeria{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: white;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+
+/* Galeria-paquetes*/
+
+.galeria-pa{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    display: block;
+}
+
+.contenedor-imagenes{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 5%;
+   
+}
+
+.imagen-pa{
+    width: 250px;
+    margin-bottom: 50px;
+    height: 250px;
+   padding-right: 10px;
+   display: flex;
+   justify-content: center;
+}
+
+.imagen-pa > img{
+    width: 110%;
+    height: 110%;
+    display: block;
+
+}
